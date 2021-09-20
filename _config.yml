@@ -1,0 +1,20 @@
+title: Geo Jolly
+email: geojollyc@gmail.com
+description: >-
+  My first jekyll site
+baseurl: "/geojolly"
+url: "https://kingjuno.me"
+twitter_path: https://twitter.com/king__juno
+github_path: https://github.com/kingjuno
+logo: "favicon-32x32.png"
+permalink: pretty
+markdown: kramdown
+
+gems:
+  - jekyll-feed
+  - jekyll-autoprefixer
+exclude:
+  - Gemfile.lock
+  - Gemfile
+sass:
+  sass_dir: _sass
