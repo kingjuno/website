@@ -1,20 +1,37 @@
-title: Geo Jolly
+name: Geo Jolly
+title: Geo Jolly | Developer
 email: geojollyc@gmail.com
 description: >-
   My first jekyll site
-baseurl: "/geojolly"
-url: "https://kingjuno.me"
-twitter_path: https://twitter.com/king__juno
-github_path: https://github.com/kingjuno
-logo: "favicon-32x32.png"
+baseurl: ""
+url: "https://github.com/kingjuno/portfolio"
+social:
+  - title: email
+    url: mailto:geojollyc@gmail.com
+  - title: twitter
+    url: https://twitter.com/king__juno
+  - title: instagram
+    url: https://instagram.com/geo__jolly
+  - title: github
+    url: https://github.com/kingjuno
+  - title: linkedin
+    url: https://www.linkedin.com/in/geo-jolly
+
 permalink: pretty
 markdown: kramdown
+
+keep_files:
+  - 'CNAME'
+  - '.git'
+  - '.gitignore'
 
 gems:
   - jekyll-feed
   - jekyll-autoprefixer
+
 exclude:
   - Gemfile.lock
   - Gemfile
+
 sass:
   sass_dir: _sass
