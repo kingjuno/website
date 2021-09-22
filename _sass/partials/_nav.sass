@@ -13,7 +13,9 @@ nav.nav-wrap
   padding: 10px
   padding-right: 20px
   min-width: 100%
-  background: rgba(0, 0, 0, 0.2)
+  background: rgba(0, 0, 0, 0.4)
+  .num
+    color: $navcolor
   @media screen and (max-width: 600px)
     padding: 35px 20px
   a.nav-logo
@@ -33,6 +35,7 @@ nav.nav-wrap
       path
         fill: $navcolor
   ul.navigation
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace
     display: flex
     flex-direction: row
     justify-content: center
@@ -61,10 +64,10 @@ nav.nav-wrap
       display: block
       padding-right: 30px
       a
-        color: $navcolor
+        color: darken($white, 25%)
         transition: all 0.15s ease-in
       a:hover
-        color: darken($white, 25%)
+        color: $navcolor
     li:last-of-type
       padding-right: 0
 //Toggled Nav
