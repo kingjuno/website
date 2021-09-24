@@ -86,6 +86,7 @@ strong {
   display: flex;
   justify-content: center;
   padding: 100px 170px;
+  background-color: rgba(navy, 0.5);
   @include thirteen {
     padding: 100px;
   }
@@ -137,6 +138,7 @@ strong {
     .underline-link {
       position: relative;
       display: inline-block;
+      color: $yellow;
       &:after {
         position: absolute;
         top: 100%;
@@ -162,78 +164,78 @@ strong {
   }
 }
 
-// .arrow-link {
-//   @include transition;
-//   font-weight: 700;
-//   display: inline-block;
-//   background-color: transparent;
-//   white-space: nowrap;
-//   &:after {
-//     @include transition;
-//     position: relative;
-//     bottom: 2px;
-//     margin-left: 15px;
-//     content: '';
-//     background: url('../img/arrow.png') no-repeat center;
-//     background-size: 100%;
-//     width: 15px;
-//     height: 15px;
-//     display: inline-block;
-//     vertical-align: middle;
-//   }
-//   &:hover:after {
-//     transform: translateX(7px);
-//   }
-// }
+.arrow-link {
+  @include transition;
+  font-weight: 700;
+  display: inline-block;
+  background-color: transparent;
+  white-space: nowrap;
+  &:after {
+    @include transition;
+    position: relative;
+    bottom: 2px;
+    margin-left: 15px;
+    content: '';
+    background: url('../img/arrow.png') no-repeat center;
+    background-size: 100%;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &:hover:after {
+    transform: translateX(7px);
+  }
+}
 
-// .small {
-//   font-family: 'Inconsolata', monospace;
-//   font-size: 0.85rem;
-//   display: inline-block;
-//   margin-top: 15px;
-//   &:after {
-//     display: none;
-//   }
-// }
+.small {
+  font-family: 'Inconsolata', monospace;
+  font-size: 0.85rem;
+  display: inline-block;
+  margin-top: 15px;
+  &:after {
+    display: none;
+  }
+}
 
-// #top-button {
-//   @include transition;
-//   background: transparent;
-//   border: none;
-//   outline: none;
-//   width: 40px;
-//   position: fixed;
-//   bottom: 25px;
-//   right: 10px;
-//   cursor: pointer;
-//   display: none;
-//   @include desktop {
-//     bottom: 20px;
-//     right: 7px;
-//     width: 35px;
-//   }
-//   @include mobile {
-//     bottom: 15px;
-//     right: 3px;
-//   }
+#top-button {
+  @include transition;
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 40px;
+  position: fixed;
+  bottom: 25px;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+  @include desktop {
+    bottom: 20px;
+    right: 7px;
+    width: 35px;
+  }
+  @include mobile {
+    bottom: 15px;
+    right: 3px;
+  }
 
-//   &:hover,
-//   &:focus {
-//     transform: translateY(-10px);
-//   }
-//   img {
-//     width: 100%;
-//   }
-// }
+  &:hover,
+  &:focus {
+    transform: translateY(-10px);
+  }
+  img {
+    width: 100%;
+  }
+}
 
-// .waypoint {
-//   opacity: 0;
-//   transform: translate3d(0, 20px, 0);
-//   transition: opacity 0.6s cubic-bezier(0.694, 0, 0.335, 1),
-//     transform 0.6s cubic-bezier(0.694, 0, 0.335, 1);
-// }
+.waypoint {
+  opacity: 0;
+  transform: translate3d(0, 20px, 0);
+  transition: opacity 0.6s cubic-bezier(0.694, 0, 0.335, 1),
+    transform 0.6s cubic-bezier(0.694, 0, 0.335, 1);
+}
 
-// .in-view {
-//   opacity: 1;
-//   transform: translateZ(0);
-// }
+.in-view {
+  opacity: 1;
+  transform: translateZ(0);
+}
