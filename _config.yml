@@ -6,11 +6,17 @@ description: >-
 baseurl: ""
 url: "https://kingjuno.me"
 cover: /assets/img/cover.png
-email: geojollyc@gmail.com
-twitter: https://twitter.com/king__juno
-instagram: https://instagram.com/geo__jolly
-github: https://github.com/kingjuno
-linkedin: https://www.linkedin.com/in/geo-jolly
+social:
+  - title: email
+    url: geojollyc@gmail.com
+  - title: twitter
+    url: https://twitter.com/king__juno
+  - title: instagram
+    url: https://instagram.com/geo__jolly
+  - title: github
+    url: https://github.com/kingjuno
+  - title: linkedin
+    url: https://www.linkedin.com/in/geo-jolly
 permalink: pretty
 markdown: kramdown
 
